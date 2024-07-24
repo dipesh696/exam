@@ -1,0 +1,21 @@
+from queue import PriorityQueue
+
+# Create a PriorityQueue instance
+p = PriorityQueue()
+
+# Add elements to the queue with different priorities
+p.put((1, 'hello'))
+p.put((2, 'I am'))
+p.put((0, 'Scorpio'))  # Changed to Scorpio with the highest priority
+
+# Print elements in order of priority
+print("Popped elements in order of priority:")
+while not p.empty():
+    priority, data = p.get()
+    print(f'Priority: {priority}, Data: {data}')
+
+# Check if the queue is empty
+if p.empty():
+    print("Priority queue is empty")
+else:
+    print("Priority queue is not empty")
