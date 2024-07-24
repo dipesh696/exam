@@ -1,0 +1,20 @@
+# Initialize the queue as an empty list
+queue = []
+
+# Add elements to the queue
+queue.append('abc')
+queue.append('xyz')
+queue.append('india')
+
+print("Queue with new elements:")
+print(queue)
+
+# Remove an element from the front of the queue
+removed_element = queue.pop(0)
+
+print("Removed element:", removed_element)
+
+# Print the queue after removing an element
+print("Queue after removing an element:")
+print(queue)
+
